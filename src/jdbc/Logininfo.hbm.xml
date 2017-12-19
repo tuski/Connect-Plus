@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 23, 2017 7:58:06 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="jdbc.Logininfo" table="logininfo" catalog="connectplus" optimistic-lock="version">
+        <id name="serialno" type="java.lang.Integer">
+            <column name="serialno" />
+            <generator class="identity" />
+        </id>
+        <property name="username" type="string">
+            <column name="username" length="32" not-null="true" unique="true" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="50" not-null="true" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" length="32" not-null="true" />
+        </property>
+        <property name="ip" type="string">
+            <column name="ip" length="16" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

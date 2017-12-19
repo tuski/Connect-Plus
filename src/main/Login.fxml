@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane depthTest="ENABLE" prefHeight="453.0" prefWidth="732.0" styleClass="pane" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.LoginController">
+    <stylesheets>
+        <URL value="@login.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane id="pane" layoutX="442.0" layoutY="61.0" prefHeight="349.0" prefWidth="233.0" style="-fx-background-color: #2CB9D9;" styleClass="pane" stylesheets="@login.css">
+         <children>
+            <JFXTextField fx:id="logUserName" focusColor="#f5f4f4" layoutX="23.0" layoutY="96.0" prefHeight="25.0" prefWidth="190.0" promptText="username" unFocusColor="#250202">
+               <font>
+                  <Font size="14.0" />
+               </font></JFXTextField>
+            <JFXPasswordField fx:id="logPassword" focusColor="#f5f6f8" layoutX="23.0" layoutY="159.0" prefHeight="25.0" prefWidth="190.0" promptText="password" unFocusColor="#250202">
+               <font>
+                  <Font size="14.0" />
+               </font></JFXPasswordField>
+            <JFXButton fx:id="loginBtn" buttonType="RAISED" defaultButton="true" layoutX="23.0" layoutY="229.0" onAction="#login" prefHeight="25.0" prefWidth="190.0" style="-fx-background-color: #d5f3d5;" text="Send" textFill="#250202">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#e40a0aa1" />
+               </effect></JFXButton>
+            <Label layoutX="21.0" layoutY="43.0" prefHeight="25.0" prefWidth="190.0" style="-fx-background-color: #d5f3d5;" text="                       Sign In">
+               <font>
+                  <Font name="Cambria Bold" size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow height="9.14" radius="4.75" width="11.86" />
+               </effect>
+            </Label>
+            <Hyperlink alignment="CENTER" layoutX="53.0" layoutY="282.0" lineSpacing="5.0" prefHeight="23.0" prefWidth="130.0" text="Forgot Password?" textFill="#dd0c33" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="208.0" fitWidth="205.0" layoutX="23.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgResource/icons8_Contacts_96px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="86.0" fitWidth="93.0" layoutX="194.0" layoutY="143.0" opacity="0.81" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgResource/icons8_Plus_Math_104px.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="150.0" layoutY="323.0" onAction="#showReg" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: #d5f3d5;" text="Sign Up" textFill="#250202">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+      </JFXButton>
+      <Label layoutX="66.0" layoutY="264.0" text="Don't have an account?" textFill="#f80a3a">
+         <font>
+            <Font name="MT Extra" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="155.0" layoutY="290.0" text="Create One..." textFill="#100bb5">
+         <font>
+            <Font name="Comic Sans MS" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 23, 2017 7:58:06 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="jdbc.Userinfo" table="userinfo" catalog="connectplus" optimistic-lock="version">
+        <id name="username" type="string">
+            <column name="username" length="32" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="30" not-null="true" />
+        </property>
+        <property name="address" type="string">
+            <column name="address" length="20" not-null="true" />
+        </property>
+        <property name="propic" type="binary">
+            <column name="propic" />
+        </property>
+        <property name="contact" type="string">
+            <column name="contact" length="20" not-null="true" />
+        </property>
+        <property name="gender" type="string">
+            <column name="gender" length="7" not-null="true" />
+        </property>
+       
+    </class>
+</hibernate-mapping>

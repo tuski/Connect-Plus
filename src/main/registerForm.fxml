@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="414.0" prefWidth="240.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.RegisterForm">
+   <children>
+      <Label layoutX="24.0" layoutY="32.0" text="Connect+" textFill="#1773b5" wrapText="true">
+         <font>
+            <Font name="MS PGothic" size="43.0" />
+         </font>
+      </Label>
+      <TextField fx:id="registerUserName" layoutX="35.0" layoutY="177.0" promptText="Your Username" />
+      <TextField fx:id="registerEmail" layoutX="37.0" layoutY="245.0" promptText="Your Email Here" />
+      <PasswordField fx:id="registerPassword" layoutX="37.0" layoutY="315.0" promptText="Your Password" />
+      <Button layoutX="43.0" layoutY="362.0" mnemonicParsing="false" onAction="#register" text="Register" textFill="#0e3175">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="33.0" layoutY="146.0" text="User Name:" />
+      <Label layoutX="40.0" layoutY="282.0" text="Password:" />
+      <Label layoutX="37.0" layoutY="216.0" text="Email:" />
+      <Label layoutX="11.0" layoutY="105.0" text="*Please provide the following information" />
+   </children>
+</AnchorPane>
